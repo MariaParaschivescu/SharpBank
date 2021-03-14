@@ -1,7 +1,9 @@
-﻿@{
-    ViewData["Title"] = "SignupView";
-}
+﻿@using SharpBank.Models
 
+@{
+    ViewData["Title"] = "SignupFailed";
+    var errorData = ViewBag.Message;
+}
 <div class="row">
     <div class="col-sm-2">
         <a asp-controller="Login" asp-action="Index"><img src="~/content/images/Logo.png" /></a>
